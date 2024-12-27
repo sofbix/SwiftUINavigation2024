@@ -2,7 +2,7 @@
 
 Материал по лекции открытого урока с темой "Навигация на SwiftUI без UIKit"
 
-Полезные ссылки:
+## Полезные ссылки
 
 1. https://developer.apple.com/documentation/swiftui/navigation
 2. https://www.youtube.com/watch?v=Gkz9nsXmtvQ
@@ -11,3 +11,10 @@
 5. https://habr.com/ru/companies/surfstudio/articles/682156/
 6. https://github.com/lm/navigation-stack-backport
 7. https://github.com/johnpatrickmorgan/NavigationBackport
+
+## Как тестировать deeplinks
+
+``` bash
+xcrun simctl openurl booted "navster://Tab/Root/Last/FullSecond?tab=first&Root=second&st=33"
+
+```
