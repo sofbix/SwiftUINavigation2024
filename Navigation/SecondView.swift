@@ -21,11 +21,8 @@ struct SecondView: View {
             }
         }
         .navigationTitle("second screen")
-        .navigation(item: $lastString) { value in
+        .navigationAction(item: $lastString, id: "Last", paramName: "st") { value in
             Path.last(value)
-        }
-        .navigateUrlParams("Last") { path in
-            lastString = path.getStringParam("st")
         }
     }
 }
